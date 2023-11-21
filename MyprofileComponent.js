@@ -18,11 +18,11 @@ class Myprofile extends Component {
       txtEmail: "",
     };
   }
-  // This where everything start 
+ // Đây là khúc bắt đầu thay đổi
   render() {
     if (this.context.token === "") return <Navigate replace to="/login"/>;
     return (
-    //  <div className="main"> 
+           //  <div className="main"> 
       <div className="align-center profile-container">
         <h2 className="text-center"> MY PROFILE </h2>
         <form>
@@ -117,7 +117,10 @@ class Myprofile extends Component {
    
     );
   }
-  // This is the end of the world 
+       // Đây là điểm kết thúc
+
+
+
   componentDidMount() {
     if (this.context.customer) {
       this.setState({
