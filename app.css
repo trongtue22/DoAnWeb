@@ -91,6 +91,8 @@ tr:not(:first-child):hover.datatable {
   cursor: pointer;
 }
 
+
+/* Mới thêm vào  */
 .button {
   color: white;
   margin-right: 3px;
