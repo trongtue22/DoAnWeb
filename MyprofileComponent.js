@@ -108,11 +108,17 @@ class Myprofile extends Component {
               </tr>
             </tbody>
           </table>
-
         </form>
-    <div className="align-center image-container" style={{ marginTop: '20px' }}>
-      <img src="https://cdn-icons-png.flaticon.com/512/1341/1341476.png" width="200px" height="200px" alt="Image description" />
-    </div>
+        {/* Ảnh  */}
+        <div className="align-center image-container" style={{ marginTop: '20px' }}>
+          <img src="https://cdn-icons-png.flaticon.com/512/1341/1341476.png" width="200px" height="200px" alt="something" />
+        </div>
+
+  {/* Ảnh thứ hai */}
+  <div className="align-center box-center" style={{ marginTop: '10px' }}>
+        <img src="https://img.freepik.com/premium-vector/illustration-with-monochrome-engine-motorcycle-with-wings-vintage-style-text-is-separate-layer-version-white-background_300579-268.jpg?w=2000" width="300px" height="150px" alt="hinh2" />
+      </div>
+
          </div>
    
     );
