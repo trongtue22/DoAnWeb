@@ -22,8 +22,10 @@ class Myprofile extends Component {
   render() {
     if (this.context.token === "") return <Navigate replace to="/login"/>;
     return (
-           //  <div className="main"> 
+           //  Đây là phần div mới thêm
+    <div className = "backgroud-profile">       
       <div className="align-center profile-container">
+      
         <h2 className="text-center"> MY PROFILE </h2>
         <form>
           <table className="align-center">
@@ -113,14 +115,11 @@ class Myprofile extends Component {
         <div className="align-center image-container" style={{ marginTop: '20px' }}>
           <img src="https://cdn-icons-png.flaticon.com/512/1341/1341476.png" width="200px" height="200px" alt="something" />
         </div>
-
-  {/* Ảnh thứ hai */}
-  <div className="align-center box-center" style={{ marginTop: '10px' }}>
-        <img src="https://img.freepik.com/premium-vector/illustration-with-monochrome-engine-motorcycle-with-wings-vintage-style-text-is-separate-layer-version-white-background_300579-268.jpg?w=2000" width="300px" height="150px" alt="hinh2" />
-      </div>
+                    
 
          </div>
-   
+   </div>
+    // Kết thúc của phần vừa mới thêm
     );
   }
        // Đây là điểm kết thúc
@@ -165,10 +164,10 @@ class Myprofile extends Component {
     axios.put("/api/customer/customers/" + id, customer, config).then((res) => {
       const result = res.data;
       if (result) {
-        alert("OK BABY !");
+        alert("Update Success !");
         this.context.setCustomer(result);
       } else {
-        alert("SORRY BABY !");
+        alert("Update Account Fail !");
       }
     });
   }
